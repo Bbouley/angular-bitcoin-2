@@ -1,3 +1,3 @@
-outputApp.controller('OutputController', function($scope){
-  $scope.outputRates = 0;
+outputApp.controller('OutputController', function($scope, homeService){
+  $scope.homeService = homeService;
 });
