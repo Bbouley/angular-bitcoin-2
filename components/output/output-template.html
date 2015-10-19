@@ -1,6 +1,6 @@
 
 <h3>Output Rates</h3>
 
-<h4>testing</h4>
+<h3>current USD rate : {{homeService.USDrate | currency:USD}}</h3>
 
-<h3>USD rate : {{homeService.USDrate}}</h3>
+<h3>{{homeService.startingAmount | currency:USD }} will buy you {{homeService.totalBitcoins | number: 2}} bitcoins</h3>
