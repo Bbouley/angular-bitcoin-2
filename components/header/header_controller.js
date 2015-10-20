@@ -1,3 +1,3 @@
 headerApp.controller('HeaderController', function($scope){
-  $scope.title = 'Bitcoin Calculator';
+  $scope.title = 'Bitcoin Investment Calculator';
 });

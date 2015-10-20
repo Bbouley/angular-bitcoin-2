@@ -1,6 +1,30 @@
+<div class = 'col-xs-6'>
 
-<h3>Output Rates</h3>
+  <h5>Output Rates</h5>
 
-<h3>current USD rate : {{homeService.USDrate | currency:USD}}</h3>
+  <h5>current USD rate : {{homeService.USDrate | currency:USD}}</h5>
 
-<h3>{{homeService.startingAmount | currency:USD }} will buy you {{homeService.totalBitcoins | number: 2}} bitcoins</h3>
+  <h5>{{homeService.startingAmount | currency:USD }} will buy you {{homeService.totalBitcoins | number: 2}} bitcoins</h5>
+
+</div>
+
+<div class = 'col-xs-6'>
+
+  <table class = 'table'>
+    <thead>
+      <tr>
+        <th>Price of 1 BTC</th>
+        <th>Starting Investment</th>
+        <th>Profit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1000</td>
+        <td>1000</td>
+        <td>1000</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
