@@ -2,12 +2,10 @@ app.controller('InputController', function($scope, BitcoinFactory, homeService){
   $scope.homeService = homeService;
 
 
-
-  $scope.startingInvestment = 0;
-
   $scope.$watch('startingInvestment', function handleChange(newValue, oldValue){
     homeService.totalBitcoins = newValue/homeService.USDrate;
     homeService.startingAmount = newValue;
+    console.log(homeService.startingAmount);
   });
 
   $scope.getRates = function(){

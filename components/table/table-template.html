@@ -1,0 +1,20 @@
+<div class = 'col-xs-12'>
+
+  <table class = 'table'>
+    <thead>
+      <tr>
+        <th class = 'col-xs-4'>Price of 1 BTC</th>
+        <th class = 'col-xs-4'>Starting Investment</th>
+        <th class = 'col-xs-4'>Profit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat = 'amount in amounts'>
+        <td class = 'col-xs-4'>{{ amount | currency}}</td>
+        <td class = 'col-xs-4'>{{ tableStartInvestment(amount) | currency}}</td>
+        <td class = 'col-xs-4'>{{tableProfit(amount) | currency}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
